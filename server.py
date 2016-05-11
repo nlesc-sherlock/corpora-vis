@@ -7,13 +7,15 @@ import numpy as np
 app = Flask(__name__)
 CORS(app)
 
+## Loading of data
+
 # Topic x words matrix
 _data = np.loadtxt('enron_small_lda_transposed.csv', delimiter=',')
 
 # Cluster x topics matrix
 _data2 = np.loadtxt('enron_small_clustertopics.csv', delimiter=',')
 
-
+# Load word => id dictionary
 _idToWord = {}
 with open('enron_small_dic.csv', 'r') as fin:
     for line in fin:
@@ -22,6 +24,8 @@ with open('enron_small_dic.csv', 'r') as fin:
         num = int(cols[0])
         word = cols[1]
         _idToWord[num] = word
+
+## Building JSON
 
 def getWordsInTopic(n):
     pct = 0.20
@@ -72,6 +76,8 @@ def visualisationData():
     }
     return jsonify(data=data)
 
+## Serve static files
+
 @app.route('/')
 def root():
     return send_from_directory('static', 'index.html')
@@ -79,6 +85,8 @@ def root():
 @app.route('/<path:path>')
 def send_content(path):
     return send_from_directory('static', path)
+
+## Start app
 
 if __name__ == '__main__':
     app.debug = True
