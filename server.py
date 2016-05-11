@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, send_from_directory
 from flask_restful import reqparse
 from flask.ext.cors import CORS
 
@@ -63,13 +63,6 @@ def getCluster(n): #newly added
     }
     return cluster
 
-# def getTopicsInCluster(nCluster):
-#     topics = [ getTopic(n) for n in range(_data.shape[1]) ]
-#     return {
-#         'name': 'Cluster %d'%nCluster,
-#         'children': topics
-#     }
-
 @app.route('/visualisation/sunburst')
 def visualisationData():
     clusters = [ getTopicsInCluster(n) for n in range(_data2.shape[1]) ]
@@ -78,6 +71,14 @@ def visualisationData():
         'children': clusters
     }
     return jsonify(data=data)
+
+@app.route('/')
+def root():
+    return send_from_directory('static', 'index.html')
+
+@app.route('/<path:path>')
+def send_content(path):
+    return send_from_directory('static', path)
 
 if __name__ == '__main__':
     app.debug = True
