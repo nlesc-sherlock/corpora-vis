@@ -9,14 +9,14 @@ nv.models.sunburst = function() {
     var margin = {top: 0, right: 0, bottom: 0, left: 0}
         , width = 600
         , height = 600
-        , mode = "count"
+        , mode = "size"
         , modes = {count: function(d) { return 1; }, value: function(d) { return d.value || d.size }, size: function(d) { return d.value || d.size }}
         , id = Math.floor(Math.random() * 10000) //Create semi-unique ID in case user doesn't select one
         , container = null
         , color = nv.utils.defaultColor()
-        , showLabels = false
-        , labelFormat = function(d){if(mode === 'count'){return d.name + ' #' + d.value}else{return d.name + ' ' + (d.value || d.size)}}
-        , labelThreshold = 0.02
+        , showLabels = true
+        , labelFormat = function(d){if(mode === 'count'){return d.name + ' #' + d.value}else{return d.name}}// + ' ' + (d.value || d.size)}}
+        , labelThreshold = 0.2
         , sort = function(d1, d2){return d1.name > d2.name;}
         , key = function(d,i){return i;}
         , groupColorByParent = true
@@ -30,7 +30,9 @@ nv.models.sunburst = function() {
     var x = d3.scale.linear().range([0, 2 * Math.PI]);
     var y = d3.scale.sqrt();
 
-    var partition = d3.layout.partition().sort(sort);
+    var partition = d3.layout.partition()
+                             .sort(null)
+                             .value(function(d) {return 1; });
 
     var node, availableWidth, availableHeight, radius;
     var prevPositions = {};
