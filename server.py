@@ -32,7 +32,7 @@ def getWordsInTopic(n):
     sortIdx = sortIdx[::-1]
     topWordIds = sortIdx[wordIds[sortIdx].cumsum()<pct]
 
-    wordArray = [ {"name": _idToWord[wId], "size": 1} for wId in topWordIds ]
+    wordArray = [ {"name": _idToWord[wId], "size": wordIds[wId]} for wId in topWordIds ]
     return wordArray
 
 def getTopicsInCluster(n): #newly added
