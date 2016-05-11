@@ -41,10 +41,12 @@ newdf = topdis.join(metasmall, metasmall.id == topdis.C0,'inner')
 
 
 # Topic x words matrix
-_data = np.loadtxt('enron_small_lda_transposed.csv', delimiter=',')
+#_data = np.loadtxt('enron_small_lda_transposed.csv', delimiter=',')
+_data = towo
 
 # Cluster x topics matrix
-_data2 = np.loadtxt('enron_small_clustertopics.csv', delimiter=',')
+#_data2 = np.loadtxt('enron_small_clustertopics.csv', delimiter=',')
+_data2 = cluto
 
 # Load word => id dictionary
 _idToWord = {}
