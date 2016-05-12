@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 12px sans-serif;
+}
+
+.chord path {
+  fill-opacity: .67;
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+</style>
+<body>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+
+d3.json("topics_dist.json",function(error,data){
+    render_data(data)
+});
+
+function render_data(data){
+var matrix=[];
+size=data.topic_0.length;
+for(i=0;i<size;i++)
+{
+    row=[];
+    for(j=0;j<size;j++)
+    {
+        row.push(data['topic_'+i][j]);
+    }
+    matrix.push(row);
+}
+
+for(i=0;i<matrix.length;i++)
+{
+    //matrix[i][i]=0.0
+    for(j=0;j<i;j++)
+    {
+        if(matrix[i][j]<0.1)
+        {
+            matrix[i][j]=0.0
+            matrix[j][i]=0.0
+        }
+    }
+}
+var chord = d3.layout.chord()
+    .padding(.05)
+    .sortSubgroups(d3.descending)
+    .matrix(matrix);
+
+var width = 1000,
+    height = 500,
+    innerRadius = Math.min(width, height) * .41,
+    outerRadius = innerRadius * 1.1;
+
+var fill = d3.scale.ordinal()
+    .domain(d3.range(15))
+    .range(["#3366cc", "#dc3912", "#ff9900", "#109618", "#990099", "#0099c6", "#dd4477", "#66aa00", "#b82e2e",
+            "#316395", "#994499", "#22aa99", "#aaaa11", "#6633cc", "#e67300", "#8b0707", "#651067", "#329262",
+            "#5574a6", "#3b3eac"]);
+
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width-100)
+    .attr("height", height+100)
+    .append("g")
+    .attr("transform", "translate(" + (width-100) / 2 + "," + (height+100) / 2 + ")");
+
+svg.append("g").selectAll("path")
+    .data(chord.groups)
+    .enter().append("path")
+    .style("fill", function(d) { return fill(d.index); })
+    .style("stroke", function(d) { return fill(d.index); })
+    .attr("d", d3.svg.arc().innerRadius(innerRadius).outerRadius(outerRadius))
+    .on("mouseover", fade(.1))
+    .on("mouseout", fade(1));
+
+var ticks = svg.append("g").selectAll("g")
+    .data(chord.groups)
+    .enter().append("g").selectAll("g")
+    .data(groupTicks)
+    .enter().append("g")
+    .attr("transform", function(d) {
+      return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
+          + "translate(" + outerRadius + ",0)";
+    });
+
+ticks.append("text")
+    .attr("x", 8)
+    .attr("dy", ".5em")
+    .attr("transform", function(d) { return d.angle > Math.PI ? "rotate(180)translate(-16)" : null; })
+    .style("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
+    .text(function(d) { return d.label; });
+
+svg.append("g")
+    .attr("class", "chord")
+    .selectAll("path")
+    .data(chord.chords)
+    .enter().append("path")
+    .attr("d", d3.svg.chord().radius(innerRadius))
+    .style("fill", function(d) { return fill(d.target.index); })
+    .style("opacity", 1);
+
+// Returns an array of tick angles and labels, given a group.
+function groupTicks(d) {
+  var k = (d.endAngle - d.startAngle) / d.value;
+  return d3.range(0, d.value, 1000).map(function(v, i) {
+    return {
+      angle: v * k + 0.5*(d.startAngle + d.endAngle),
+      label: "topic "+ d.index
+    };
+  });
+}
+// Returns an event handler for fading a given chord group.
+function fade(opacity) {
+  return function(g, i) {
+    svg.selectAll(".chord path")
+        .filter(function(d) { return d.source.index != i && d.target.index != i; })
+        .transition()
+        .style("opacity", opacity);
+  };
+}
+}
+
+</script>
