@@ -35,8 +35,8 @@ path {
 <body>
 <svg id="sequence"></svg>
 <form>
-  <label><input type="radio" name="mode" value="size"> Size</label>
-  <label><input type="radio" name="mode" value="count" checked> Count</label>
+  <label><input type="radio" name="mode" value="size", id='_1234'> Size</label>
+  <label><input type="radio" name="mode" value="count" checked, id='_2345'> Count</label>
 </form>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
@@ -102,6 +102,10 @@ d3.json("http://localhost:5000/visualisation/sunburst", function(error, root) {
     .on("click", click)
     .on("mouseover", mouseover)
     .each(stash);
+
+  // reset radio buttons to default values on page
+	document.getElementById('_1234').checked = false;
+ 	document.getElementById('_2345').checked = true;
 
   // Add the mouseleave handler to the bounding circle.
   d3.select("#container").on("mouseleave", mouseleave);
