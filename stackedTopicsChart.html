@@ -856,13 +856,16 @@
             .controlLabels({stacked: "Stacked"})
             .duration(300);
 
-        chart.xAxis.tickFormat(function(d) { return d3.time.format('%x')(new Date(d)) });
+        chart.xAxis.tickFormat(function(d) { return d3.time.format('%x')(new Date(d*1000)) });
         chart.yAxis.tickFormat(d3.format(',.4f'));
 
         chart.legend.vers('furious');
 
-        d3.select('#chart1')
-            .datum(histcatexplong)
+        d3.json("daniela.json", function(error, graph){
+             console.log(graph)
+             debugger
+             d3.select('#chart1')
+            .datum(graph['data'])
             .transition().duration(1000)
             .call(chart)
             .each('start', function() {
@@ -872,7 +875,10 @@
                             this.__transition__.duration = 1;
                     })
                 }, 0)
-            });
+            });    
+
+
+        })
 
         nv.utils.windowResize(chart.update);
         return chart;
