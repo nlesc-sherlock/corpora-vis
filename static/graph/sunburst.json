@@ -1,0 +1,879 @@
+{
+  "data": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "phillip", 
+                "size": 1
+              }, 
+              {
+                "name": "have", 
+                "size": 1
+              }, 
+              {
+                "name": "do", 
+                "size": 1
+              }, 
+              {
+                "name": "not", 
+                "size": 1
+              }, 
+              {
+                "name": "please", 
+                "size": 1
+              }, 
+              {
+                "name": "need", 
+                "size": 1
+              }, 
+              {
+                "name": "here", 
+                "size": 1
+              }, 
+              {
+                "name": "new", 
+                "size": 1
+              }, 
+              {
+                "name": "go", 
+                "size": 1
+              }, 
+              {
+                "name": "plan", 
+                "size": 1
+              }, 
+              {
+                "name": "call", 
+                "size": 1
+              }, 
+              {
+                "name": "get", 
+                "size": 1
+              }, 
+              {
+                "name": "email", 
+                "size": 1
+              }, 
+              {
+                "name": "work", 
+                "size": 1
+              }, 
+              {
+                "name": "send", 
+                "size": 1
+              }, 
+              {
+                "name": "holiday", 
+                "size": 1
+              }, 
+              {
+                "name": "question", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 2"
+          }, 
+          {
+            "children": [
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "have", 
+                "size": 1
+              }, 
+              {
+                "name": "do", 
+                "size": 1
+              }, 
+              {
+                "name": "not", 
+                "size": 1
+              }, 
+              {
+                "name": "phillip", 
+                "size": 1
+              }, 
+              {
+                "name": "email", 
+                "size": 1
+              }, 
+              {
+                "name": "here", 
+                "size": 1
+              }, 
+              {
+                "name": "buy", 
+                "size": 1
+              }, 
+              {
+                "name": "please", 
+                "size": 1
+              }, 
+              {
+                "name": "com", 
+                "size": 1
+              }, 
+              {
+                "name": "click", 
+                "size": 1
+              }, 
+              {
+                "name": "column", 
+                "size": 1
+              }, 
+              {
+                "name": "information", 
+                "size": 1
+              }, 
+              {
+                "name": "internet", 
+                "size": 1
+              }, 
+              {
+                "name": "look", 
+                "size": 1
+              }, 
+              {
+                "name": "get", 
+                "size": 1
+              }, 
+              {
+                "name": "use", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 1"
+          }, 
+          {
+            "children": [
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "have", 
+                "size": 1
+              }, 
+              {
+                "name": "phillip", 
+                "size": 1
+              }, 
+              {
+                "name": "do", 
+                "size": 1
+              }, 
+              {
+                "name": "not", 
+                "size": 1
+              }, 
+              {
+                "name": "here", 
+                "size": 1
+              }, 
+              {
+                "name": "need", 
+                "size": 1
+              }, 
+              {
+                "name": "get", 
+                "size": 1
+              }, 
+              {
+                "name": "report", 
+                "size": 1
+              }, 
+              {
+                "name": "question", 
+                "size": 1
+              }, 
+              {
+                "name": "work", 
+                "size": 1
+              }, 
+              {
+                "name": "please", 
+                "size": 1
+              }, 
+              {
+                "name": "pay", 
+                "size": 1
+              }, 
+              {
+                "name": "call", 
+                "size": 1
+              }, 
+              {
+                "name": "physical", 
+                "size": 1
+              }, 
+              {
+                "name": "analyst", 
+                "size": 1
+              }, 
+              {
+                "name": "check", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 0"
+          }
+        ], 
+        "name": "Cluster 0"
+      }, 
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "name": "price", 
+                "size": 1
+              }, 
+              {
+                "name": "power", 
+                "size": 1
+              }, 
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "trader", 
+                "size": 1
+              }, 
+              {
+                "name": "say", 
+                "size": 1
+              }, 
+              {
+                "name": "fall", 
+                "size": 1
+              }, 
+              {
+                "name": "bloomberg", 
+                "size": 1
+              }, 
+              {
+                "name": "trade", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 5"
+          }, 
+          {
+            "children": [
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "have", 
+                "size": 1
+              }, 
+              {
+                "name": "price", 
+                "size": 1
+              }, 
+              {
+                "name": "say", 
+                "size": 1
+              }, 
+              {
+                "name": "gas", 
+                "size": 1
+              }, 
+              {
+                "name": "not", 
+                "size": 1
+              }, 
+              {
+                "name": "phillip", 
+                "size": 1
+              }, 
+              {
+                "name": "do", 
+                "size": 1
+              }, 
+              {
+                "name": "week", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 4"
+          }, 
+          {
+            "children": [
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "com", 
+                "size": 1
+              }, 
+              {
+                "name": "image", 
+                "size": 1
+              }, 
+              {
+                "name": "have", 
+                "size": 1
+              }, 
+              {
+                "name": "phillip", 
+                "size": 1
+              }, 
+              {
+                "name": "do", 
+                "size": 1
+              }, 
+              {
+                "name": "not", 
+                "size": 1
+              }, 
+              {
+                "name": "gas", 
+                "size": 1
+              }, 
+              {
+                "name": "go", 
+                "size": 1
+              }, 
+              {
+                "name": "new", 
+                "size": 1
+              }, 
+              {
+                "name": "please", 
+                "size": 1
+              }, 
+              {
+                "name": "here", 
+                "size": 1
+              }, 
+              {
+                "name": "need", 
+                "size": 1
+              }, 
+              {
+                "name": "change", 
+                "size": 1
+              }, 
+              {
+                "name": "get", 
+                "size": 1
+              }, 
+              {
+                "name": "plan", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 3"
+          }
+        ], 
+        "name": "Cluster 1"
+      }, 
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "name": "buy", 
+                "size": 1
+              }, 
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "downgrade", 
+                "size": 1
+              }, 
+              {
+                "name": "coverage", 
+                "size": 1
+              }, 
+              {
+                "name": "strong", 
+                "size": 1
+              }, 
+              {
+                "name": "initiate", 
+                "size": 1
+              }, 
+              {
+                "name": "have", 
+                "size": 1
+              }, 
+              {
+                "name": "phillip", 
+                "size": 1
+              }, 
+              {
+                "name": "upgraded", 
+                "size": 1
+              }, 
+              {
+                "name": "market", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 8"
+          }, 
+          {
+            "children": [
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "gas", 
+                "size": 1
+              }, 
+              {
+                "name": "have", 
+                "size": 1
+              }, 
+              {
+                "name": "price", 
+                "size": 1
+              }, 
+              {
+                "name": "mm", 
+                "size": 1
+              }, 
+              {
+                "name": "utility", 
+                "size": 1
+              }, 
+              {
+                "name": "say", 
+                "size": 1
+              }, 
+              {
+                "name": "not", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 7"
+          }, 
+          {
+            "children": [
+              {
+                "name": "image", 
+                "size": 1
+              }, 
+              {
+                "name": "yahoo", 
+                "size": 1
+              }, 
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "change", 
+                "size": 1
+              }, 
+              {
+                "name": "not", 
+                "size": 1
+              }, 
+              {
+                "name": "have", 
+                "size": 1
+              }, 
+              {
+                "name": "time", 
+                "size": 1
+              }, 
+              {
+                "name": "story", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 6"
+          }
+        ], 
+        "name": "Cluster 2"
+      }, 
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "phillip", 
+                "size": 1
+              }, 
+              {
+                "name": "have", 
+                "size": 1
+              }, 
+              {
+                "name": "not", 
+                "size": 1
+              }, 
+              {
+                "name": "do", 
+                "size": 1
+              }, 
+              {
+                "name": "investor", 
+                "size": 1
+              }, 
+              {
+                "name": "com", 
+                "size": 1
+              }, 
+              {
+                "name": "here", 
+                "size": 1
+              }, 
+              {
+                "name": "free", 
+                "size": 1
+              }, 
+              {
+                "name": "project", 
+                "size": 1
+              }, 
+              {
+                "name": "please", 
+                "size": 1
+              }, 
+              {
+                "name": "work", 
+                "size": 1
+              }, 
+              {
+                "name": "need", 
+                "size": 1
+              }, 
+              {
+                "name": "use", 
+                "size": 1
+              }, 
+              {
+                "name": "question", 
+                "size": 1
+              }, 
+              {
+                "name": "click", 
+                "size": 1
+              }, 
+              {
+                "name": "time", 
+                "size": 1
+              }, 
+              {
+                "name": "get", 
+                "size": 1
+              }, 
+              {
+                "name": "email", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 11"
+          }, 
+          {
+            "children": [
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "have", 
+                "size": 1
+              }, 
+              {
+                "name": "phillip", 
+                "size": 1
+              }, 
+              {
+                "name": "do", 
+                "size": 1
+              }, 
+              {
+                "name": "not", 
+                "size": 1
+              }, 
+              {
+                "name": "need", 
+                "size": 1
+              }, 
+              {
+                "name": "week", 
+                "size": 1
+              }, 
+              {
+                "name": "get", 
+                "size": 1
+              }, 
+              {
+                "name": "please", 
+                "size": 1
+              }, 
+              {
+                "name": "up", 
+                "size": 1
+              }, 
+              {
+                "name": "new", 
+                "size": 1
+              }, 
+              {
+                "name": "follow", 
+                "size": 1
+              }, 
+              {
+                "name": "price", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 10"
+          }, 
+          {
+            "children": [
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "gas", 
+                "size": 1
+              }, 
+              {
+                "name": "have", 
+                "size": 1
+              }, 
+              {
+                "name": "do", 
+                "size": 1
+              }, 
+              {
+                "name": "not", 
+                "size": 1
+              }, 
+              {
+                "name": "phillip", 
+                "size": 1
+              }, 
+              {
+                "name": "need", 
+                "size": 1
+              }, 
+              {
+                "name": "cost", 
+                "size": 1
+              }, 
+              {
+                "name": "storage", 
+                "size": 1
+              }, 
+              {
+                "name": "utility", 
+                "size": 1
+              }, 
+              {
+                "name": "number", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 9"
+          }
+        ], 
+        "name": "Cluster 3"
+      }, 
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "have", 
+                "size": 1
+              }, 
+              {
+                "name": "not", 
+                "size": 1
+              }, 
+              {
+                "name": "phillip", 
+                "size": 1
+              }, 
+              {
+                "name": "do", 
+                "size": 1
+              }, 
+              {
+                "name": "email", 
+                "size": 1
+              }, 
+              {
+                "name": "please", 
+                "size": 1
+              }, 
+              {
+                "name": "market", 
+                "size": 1
+              }, 
+              {
+                "name": "use", 
+                "size": 1
+              }, 
+              {
+                "name": "go", 
+                "size": 1
+              }, 
+              {
+                "name": "yahoo", 
+                "size": 1
+              }, 
+              {
+                "name": "here", 
+                "size": 1
+              }, 
+              {
+                "name": "information", 
+                "size": 1
+              }, 
+              {
+                "name": "image", 
+                "size": 1
+              }, 
+              {
+                "name": "send", 
+                "size": 1
+              }, 
+              {
+                "name": "new", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 14"
+          }, 
+          {
+            "children": [
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "have", 
+                "size": 1
+              }, 
+              {
+                "name": "phillip", 
+                "size": 1
+              }, 
+              {
+                "name": "do", 
+                "size": 1
+              }, 
+              {
+                "name": "not", 
+                "size": 1
+              }, 
+              {
+                "name": "enron@enron,", 
+                "size": 1
+              }, 
+              {
+                "name": "need", 
+                "size": 1
+              }, 
+              {
+                "name": "na", 
+                "size": 1
+              }, 
+              {
+                "name": "work", 
+                "size": 1
+              }, 
+              {
+                "name": "please", 
+                "size": 1
+              }, 
+              {
+                "name": "get", 
+                "size": 1
+              }, 
+              {
+                "name": "want", 
+                "size": 1
+              }, 
+              {
+                "name": "file", 
+                "size": 1
+              }, 
+              {
+                "name": "pay", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 13"
+          }, 
+          {
+            "children": [
+              {
+                "name": "be", 
+                "size": 1
+              }, 
+              {
+                "name": "price", 
+                "size": 1
+              }, 
+              {
+                "name": "gas", 
+                "size": 1
+              }, 
+              {
+                "name": "power", 
+                "size": 1
+              }, 
+              {
+                "name": "trade", 
+                "size": 1
+              }, 
+              {
+                "name": "new", 
+                "size": 1
+              }, 
+              {
+                "name": "have", 
+                "size": 1
+              }, 
+              {
+                "name": "say", 
+                "size": 1
+              }, 
+              {
+                "name": "weather", 
+                "size": 1
+              }
+            ], 
+            "name": "Topic 12"
+          }
+        ], 
+        "name": "Cluster 4"
+      }
+    ], 
+    "name": "ENRON"
+  }
+}
